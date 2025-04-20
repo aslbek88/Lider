@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Админ-панель для управления сайтом Lider">
+    <title>Админ-панель - Lider</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Lider Logo">
+            </a>
+        </div>
+        <h1>Админ-панель</h1>
+    </header>
+
+    <main>
+        <section class="admin-controls">
+            <h2>Управление контентом</h2>
+            <p>Выберите раздел для редактирования:</p>
+            <ul>
+                <li><a href="#news">Новости</a></li>
+                <li><a href="#catalog">Каталог</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+            </ul>
+            
+            <section id="news">
+                <h3>Редактирование новостей</h3>
+                <textarea rows="5" placeholder="Добавьте новость..."></textarea>
+                <button>Сохранить</button>
+            </section>
+
+            <section id="catalog">
+                <h3>Управление каталогом</h3>
+                <button>Загрузить PDF</button>
+            </section>
+
+            <section id="reviews">
+                <h3>Модерация отзывов</h3>
+                <div class="review">
+                    <p>Анна Иванова: Очень вкусные конфеты!</p>
+                    <button>Удалить</button>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lider. Все права защищены.</p>
+    </footer>
+</body>
+</html>
